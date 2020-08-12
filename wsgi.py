@@ -20,3 +20,5 @@ sys.stdout = sys.stderr
 # 출력을 현재 디렉토리에 추가 
 sys.path.insert(0, cur_dir)
 # 아파치 서버에서 표준 출력과 에러 출력의 방향을 설정하기 위한 세팅
+
+from run import app as application

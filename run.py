@@ -1,14 +1,11 @@
-# 1. 모듈가져오기
-from flask import Flask, render_template, request
+from flask import Flask
 
-# 2. 앱 생성
 app = Flask(__name__)
 
-# 3. 라우팅
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return 'aws 홈페이지'
 
-# 4. 서버가동
 if __name__ == '__main__':
-    app.run(debug=True)
+    # debug=True : 서버 내용이 수정되면 자동으로 재가동
+    app.run(debug=True, host='0.0.0.0') 
